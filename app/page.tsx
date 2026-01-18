@@ -3,6 +3,10 @@ import Image from "next/image";
 import {PrimaryButton, SecondaryButton} from "@/app/components/ui/buttons"
 import HamburgerButton from "@/app/components/ui/hamburgerButton"
 import footer_img from "@/public/footer_bg.png"
+import hero from "@/public/blocks/hero.png"
+import pftop from "@/public/blocks/pftop.png"
+import block1 from "@/public/blocks/block1.png"
+import block2 from "@/public/blocks/block2.png"
 
 const builtByExperts = [
     {
@@ -154,7 +158,7 @@ export default function Home() {
         <div className={`min-h-screen w-full bg-[#f5f5f5] flex flex-col items-center`}>
 
             {/* Navbar */}
-            <div className={`fixed h-[89px] bg-[#f5f5f5] w-full border-b border-[#e6e6e6] font-sans font-medium text-[16px]`}>
+            <div className={`z-99 fixed h-[89px] bg-[#f5f5f5] w-full border-b border-[#e6e6e6] font-sans font-medium text-[16px]`}>
                 <div className={`h-full max-w-[450px] md:max-w-[900px] lg:max-w-[1320px] mx-auto w-full`}>
                     <div className={`h-full w-full flex items-center justify-between md:px-[30px] lg:px-[40px]`}>
                         <div className={`flex items-center gap-x-[30px]`}>
@@ -184,7 +188,7 @@ export default function Home() {
 
             {/* Hero Section */}
             <div className={`mt-[89px] min-h-[750px] xl:h-[750px] w-full font-sans font-medium text-[16px]`}>
-                <div className={`h-full max-w-[450px] md:max-w-[800px] xl:max-w-[1320px] mx-auto w-full flex flex-col xl:flex-row gap-x-0 md:gap-x-[30px]`}>
+                <div className={`h-full max-w-[450px] md:max-w-[800px] xl:max-w-[1320px] mx-auto w-full flex flex-col xl:flex-row`}>
                     <div className={`h-full w-full xl:w-1/2 py-[60px] flex flex-col gap-y-[60px] justify-around md:pl-[30px] lg:pl-[40px]`}>
                         <div className={`flex flex-col gap-y-[40px]`}>
                             <div className={`flex flex-col gap-y-[14px]`}>
@@ -248,14 +252,61 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className={`h-[623px] w-full xl:h-full xl:w-1/2 bg-yellow-500`}>
-
+                    <div
+                        style={{ backgroundImage: `url(${hero.src})` }}
+                        className="
+                        h-[529px]
+                        w-full
+                        md:h-[804px]
+                        md:w-[741px]
+                        xl:h-[750px]
+                        xl:min-w-[692px]
+                        bg-cover
+                        bg-center
+                        overflow-hidden
+                        xl:overflow-hidden"
+                    >
                     </div>
                 </div>
             </div>
 
-            <div className={`h-[41px] w-full bg-red-500`}>
+            {/* Bar */}
+            <div className={`w-full h-[41px] bg-red-400`}>
 
+            </div>
+
+            {/* Product Features */}
+            <div className={`mt-[100px] w-full h-[1494px] flex flex-col items-center gap-y-[50px]`}>
+                <div className={`w-[1240px] h-[228px] flex flex-col items-center gap-y-[14px]`}>
+                    <div className={`font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>Product Features</div>
+                    <div className={`w-full h-[190px] flex flex-col items-center gap-y-[18px]`}>
+                        <div className={`font-inter font-semibold text-[52px] leading-[1.2] tracking-[-0.02em] text-center`}>All-in-one <br/> AI marketing platform</div>
+                        <div className={`text-[#52555B] font-sans font-medium text-[16px] leading-[1.5] tracking-[-0.02em] text-center`}>From research to reporting, Uplane automates your entire performance marketing <br/> workflow, so you can move faster, create smarter, and scale effortlessly.</div>
+                    </div>
+                </div>
+
+                <div className="w-full h-[1216px] flex flex-col items-center overflow-visible">
+                    <div
+                        style={{ backgroundImage: `url(${pftop.src})` }}
+                        className="w-[786px] h-[65px] bg-cover bg-center"
+                    />
+
+                    <div className="w-full h-[696px] flex justify-center gap-x-[20px] overflow-visible">
+                        <div className="h-full md:w-[610px] lg:w-[676px] pl-[50px] overflow-visible">
+                            <div
+                                style={{ backgroundImage: `url(${block1.src})` }}
+                                className="h-full w-full bg-cover bg-center overflow-visible"
+                            />
+                        </div>
+
+                        <div className="h-full md:w-[610px] lg:w-[676px] pr-[50px] overflow-visible">
+                            <div
+                                style={{ backgroundImage: `url(${block2.src})` }}
+                                className="h-full w-full bg-cover bg-center overflow-visible"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Footer */}
