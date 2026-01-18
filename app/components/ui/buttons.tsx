@@ -76,16 +76,16 @@ const PrimaryButton = ({ text, href = "#" }: ButtonProps1) => {
             {/* Shiny diagonal shade */}
             <motion.div
                 variants={{
-                    rest: { x: "-120%" },
-                    hover: { x: "120%" },
+                    rest: { x: "-550%" },
+                    hover: { x: "550%" },
                 }}
-                transition={{ duration: 0.35, ease: "easeInOut" }}
+                transition={{ duration: 0.25, ease: "easeIn" }}
                 className="
           pointer-events-none
           absolute
           top-1/2
           left-0
-          h-[140px]
+          h-[180px]
           w-[28px]
           -translate-y-1/2
           rotate-[35deg]

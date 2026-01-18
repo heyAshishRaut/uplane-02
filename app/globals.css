@@ -6,3 +6,28 @@
     --font-inter: var(--font-inter);
 }
 
+@theme inline {
+    --marquee-duration: 25s;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee var(--marquee-duration) linear infinite;
+}
+
+.animate-marquee {
+    animation-direction: reverse;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
