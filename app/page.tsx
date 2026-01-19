@@ -134,7 +134,7 @@ export default function Home() {
             <HeroSection/>
 
             {/* Bar */}
-            <div className="my-4 relative w-full h-[41px]">
+            <div className="relative w-full h-[41px]">
                 <svg
                     className="absolute top-0 left-0 w-full h-[2px]"
                     viewBox="0 0 1439 2"
@@ -158,42 +158,41 @@ export default function Home() {
                 </svg>
 
                 <div className={`relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] mx-auto h-[41px]`}>
-                    <svg className={`absolute top-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <div className="absolute inset-0 z-0" />
+
+                    <svg className={`z-10 absolute top-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
-                            fill="white" stroke="#E0E0E0" strokeWidth="1.5"/>
+                            fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute bottom-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute bottom-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
-                            fill="white" stroke="#E0E0E0" strokeWidth="1.5"/>
+                            fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute top-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute top-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
-                            fill="white" stroke="#E0E0E0" strokeWidth="1.5"/>
+                            fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute bottom-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute bottom-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
-                            fill="white" stroke="#E0E0E0" strokeWidth="1.5"/>
+                            fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <Image
-                        src={bargrid}
-                        alt=""
-                        height={41}
-                        width={500}
-                        className="object-cover z-30"
-                        priority
-                    />
+                    <div className="z-0 relative w-full h-[41px]">
+                        <div className={`h-full w-full opacity-50 bg-grid-texture`}>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -691,48 +690,46 @@ export default function Home() {
                 </svg>
 
                 <div className={`relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] mx-auto h-[41px]`}>
-                    <svg className={`absolute top-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <div className="absolute inset-0 z-0" />
+
+                    <svg className={`z-10 absolute top-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
                             fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute bottom-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute bottom-[-2px] left-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
                             fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute top-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute top-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
                             fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <svg className={`absolute bottom-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
+                    <svg className={`z-10 absolute bottom-[-2px] right-[-3px]`} width="12" height="6" viewBox="0 0 12 6"
                          fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5.86035 5.02893C7.11962 5.0289 8.29008 4.86725 9.1709 4.58655C9.60697 4.44756 10.0147 4.26579 10.3291 4.02893C10.6308 3.8015 10.9697 3.42395 10.9697 2.88928C10.9696 2.35461 10.6308 1.97702 10.3291 1.74963C10.0147 1.51276 9.60701 1.33101 9.1709 1.19202C8.29008 0.911313 7.11962 0.749666 5.86035 0.749634C4.60094 0.749634 3.42973 0.911285 2.54883 1.19202C2.11288 1.33097 1.70591 1.51286 1.3916 1.74963C1.10874 1.96276 0.792439 2.30775 0.753906 2.79065L0.75 2.88928L0.753906 2.98792C0.792307 3.47101 1.10867 3.81575 1.3916 4.02893C1.70591 4.26575 2.11284 4.44757 2.54883 4.58655C3.42973 4.86728 4.60094 5.02893 5.86035 5.02893Z"
                             fill="white" stroke="#E0E0E0" stroke-width="1.5"/>
                     </svg>
 
-                    <Image
-                        src={bargrid}
-                        alt=""
-                        height={41}
-                        width={500}
-                        className="object-cover z-30"
-                        priority
-                    />
+                    <div className="z-0 relative w-full h-[41px]">
+                        <div className={`h-full w-full opacity-50 bg-grid-texture`}>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
             {/* Start Scaling Faster 02 */}
-            <div
-                className={`py-[60] px-0 lg:px-[85px] md:py-[80px] relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center md:items-start gap-y-[20px] mx-auto`}>
+            <div className={`py-[60] px-0 lg:px-[85px] md:py-[80px] relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center md:items-start gap-y-[20px] mx-auto`}>
 
                 <div className={`font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>
                     Start Scaling Faster
@@ -816,10 +813,8 @@ export default function Home() {
             </div>
 
             {/* table for lg, xl */}
-            <div
-                className="
+            <div className="
                 mb-30
-
                 px-0
                 relative
                 hidden
