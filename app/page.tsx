@@ -6,6 +6,8 @@ import footer from "@/public/img.png"
 import hero from "@/public/blocks/hero.png"
 import pftop from "@/public/blocks/pftop.png"
 
+import getstart from "@/public/getstart01.png"
+
 import lefttopleft from "@/public/blocks/lefttopleft.png"
 import lefttopright from "@/public/blocks/lefttopright.png"
 import leftbottomleft from "@/public/blocks/leftbottomleft.png"
@@ -220,7 +222,7 @@ export default function Home() {
             {/* Hero Section */}
             <div className={`mt-[89px] min-h-[750px] xl:h-[750px] w-full font-sans font-medium text-[16px]`}>
                 <div
-                    className={`h-full max-w-[450px] md:max-w-[800px] xl:max-w-[1320px] mx-auto w-full flex flex-col xl:flex-row`}>
+                    className={`h-full max-w-[450px] md:max-w-[800px] xl:max-w-[1320px] mx-auto w-full flex flex-col justify-center xl:flex-row`}>
                     <div
                         className={`h-full w-full xl:w-1/2 py-[60px] flex flex-col gap-y-[60px] justify-around md:pl-[30px] lg:pl-[40px]`}>
                         <div className={`flex flex-col gap-y-[40px]`}>
@@ -307,6 +309,7 @@ export default function Home() {
                         md:w-[741px]
                         xl:h-[750px]
                         xl:min-w-[692px]
+                        mx-auto
                         bg-cover
                         bg-center
                         overflow-hidden
@@ -648,7 +651,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={`py-[80px] relative w-[440px] md:w-[800px] lg:w-[1240px] flex flex-col items-center gap-y-[20px] h-[422px] mx-auto`}>
+            <div className={`py-[60] md:py-[80px] relative w-[440px] md:w-[800px] lg:w-[1240px] flex flex-col items-center gap-y-[20px] mx-auto`}>
                 {/* Left */}
                 <div className="hidden md:block absolute top-0 left-0 h-full">
                     <svg
@@ -695,12 +698,12 @@ export default function Home() {
                     Start Scaling Faster
                 </div>
 
-                <div className={`font-inter font-semibold text-[34px] md:text-[52px] leading-[1.2] tracking-[-0.02em] text-center`}>
+                <div className={`font-inter font-semibold text-[32px] md:text-[52px] leading-[1.2] tracking-[-0.02em] text-center`}>
                     AI-powered marketing that builds, <br className={`hidden lg:inline`}/>
                     learns, and grows with you.
                 </div>
                 
-                <div className={`self-center pt-[30px] xl:pt-[50px]`}>
+                <div className={`self-center pt-[20px] xl:pt-[50px]`}>
                     <PrimaryButton text={"Talk to Founders"}/>
                 </div>
             </div>
@@ -710,8 +713,68 @@ export default function Home() {
 
             </div>
 
+            {/* Comparison */}
+            <div className={`py-[60] md:py-[80px] relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center md:items-start gap-y-[20px] mx-auto`}>
+
+                <div className={`font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>
+                    Start Scaling Faster
+                </div>
+
+                <div className={`font-inter font-semibold text-[32px] md:text-[52px] leading-[1.2] tracking-[-0.02em] text-center md:text-start`}>
+                    Why Uplane is the smarter way to <br className={`hidden lg:inline`}/> scale performance marketing
+                </div>
+
+                <div className={`w-full flex flex-col gap-y-[30px] lg:gap-y-0 lg:flex-row justify-start lg:items-center lg:justify-between`}>
+                    <div className={`text-[#52555B] font-sans font-medium text-center md:text-start`}>See how Uplane replaces guesswork with automation at every step <br className={`hidden lg:inline`}/> of your marketing funnel.</div>
+                    <div className={`self-center lg:self-end`}>
+                        <PrimaryButton text={"Talk to Founders"}/>
+                    </div>
+                </div>
+            </div>
+
+            {/* Let's get started */}
+            <div className={`relative mb-30 w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] mx-auto`}>
+
+                <div className={`w-full bg-white rounded-3xl p-1.5 shadow-[0_6px_16px_rgba(0,0,0,0.08)]`}>
+                    <div className={`relative bg-[#e8f1fe] md:bg-none w-full h-full rounded-2xl flex flex-col p-[40px] gap-y-[20px] overflow-hidden`}>
+                        <div
+                            className="hidden md:block absolute inset-0 z-0"
+                            style={{
+                                backgroundImage: `
+                        radial-gradient(120% 80% at 50% 100%, rgba(173, 216, 255, 0.45), transparent 60%),
+                        radial-gradient(80% 80% at 0% 100%, rgba(186, 210, 255, 0.35), transparent 60%),
+                        radial-gradient(80% 80% at 100% 100%, rgba(186, 210, 255, 0.35), transparent 60%),
+                        radial-gradient(140% 120% at 50% 20%, #ffffff 45%, #f8fbff 70%, #eef4ff 100%)
+                        `,
+                            }}
+                        />
+                        <Image
+                            src={getstart}
+                            alt=""
+                            height={450}
+                            width={450}
+                            className="w-[600px] h-[600px] lg:w-[600px] lg:h-[600px] hidden md:block absolute right-0 top-0 object-cover"
+                        />
+                        <div className={`z-10 self-center md:self-start font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>
+                            Let's get started
+                        </div>
+
+                        <div className={`z-10 font-inter font-semibold text-[32px] md:text-[52px] leading-[1.2] tracking-[-0.02em] text-center md:text-start`}>
+                            Ready to upgrade
+                            your marketing?
+                        </div>
+
+                        <div className={`text-[#52555B] z-10 font-sans font-medium text-center md:text-start`}>Let Uplane handle the busywork, so you can focus on what matters.</div>
+                        <div className={`mt-6 z-10 self-center md:self-start`}>
+                            <PrimaryButton text={"Talk to Founders"}/>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             {/* Footer */}
-            <div className="relative w-full h-[793px] xl:h-[793px] md:h-[1063px] overflow-hidden">
+            <div className="relative w-full min-h-[793px] xl:h-[793px] md:h-[1063px] overflow-hidden">
                 <div
                     className="absolute inset-0 z-0"
                     style={{
@@ -725,7 +788,7 @@ export default function Home() {
                 />
                 <Image src={footer} alt={``} height={355} width={1234} className={`absolute bottom-[-50px] md:bottom-[-70px] lg:bottom-[-100px] left-1/2 -translate-x-1/2 z-10`} />
 
-                <div className={`relative z-30 h-full max-w-[450px] md:max-w-[900px] xl:max-w-[1320px] mx-auto px-[20px] md:px-[40px]`}>
+                <div className={`relative pb-30 md:pb-0 z-30 h-full max-w-[450px] md:max-w-[900px] xl:max-w-[1320px] mx-auto px-[20px] md:px-[40px]`}>
                     <div className={`w-full pt-[50px] flex flex-col gap-y-[50px]`}>
 
                         <div
