@@ -1,5 +1,7 @@
 import {lists} from "@/utils/items"
-import Image from "next/image";
+import table from "@/utils/table"
+
+import Image from "next/image"
 import {PrimaryButton, SecondaryButton} from "@/app/components/ui/buttons"
 import HamburgerButton from "@/app/components/ui/hamburgerButton"
 import footer from "@/public/img.png"
@@ -467,7 +469,7 @@ export default function Home() {
                                 </svg>
                             </div>
 
-                            <div className={`h-full w-full flex flex-col p-2`}>
+                            <div className={`bg-[#52555B]/5 h-full w-full flex flex-col p-2`}>
                                 <div className={`h-[60%] lg:h-[55%] xl:h-[386px] w-full bg-white rounded-2xl shadow-[0_6px_16px_rgba(0,0,0,0.08)]`}>
 
                                 </div>
@@ -548,7 +550,7 @@ export default function Home() {
                                 </svg>
                             </div>
 
-                            <div className={`h-full w-full flex flex-col p-2`}>
+                            <div className={`bg-[#52555B]/5 h-full w-full flex flex-col p-2`}>
                                 <div className={`h-[60%] lg:h-[55%] xl:h-[386px] w-full bg-white rounded-2xl shadow-[0_6px_16px_rgba(0,0,0,0.08)]`}>
 
                                 </div>
@@ -628,7 +630,7 @@ export default function Home() {
                             </svg>
                         </div>
 
-                        <div className={`w-full h-full flex flex-col lg:flex-row`}>
+                        <div className={`bg-[#52555B]/5 w-full h-full flex flex-col lg:flex-row`}>
                             <div className={`w-full lg:w-1/2 flex-1 order-2 lg:order-1 p-[20px] md:p-[40px] xl:p-[60px] flex flex-col justify-center gap-y-[40px]`}>
                                 <div className={`flex flex-col gap-y-[14px] leading-[1.2] tracking-[-0.02em]`}>
                                     <div className={`text-[14px] font-sans font-medium text-[#2476FF]`}>Chat Interface</div>
@@ -700,6 +702,7 @@ export default function Home() {
                 </div>
             </div>
 
+            {/* Start Scaling Faster */}
             <div className={`py-[60] md:py-[80px] relative w-[440px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center gap-y-[20px] mx-auto`}>
                 {/* Left */}
                 <div className="hidden md:block absolute top-0 left-0 h-full">
@@ -730,18 +733,18 @@ export default function Home() {
                 </div>
 
                 {/* Bottom */}
-                <div className="hidden md:block absolute bottom-0 left-0 w-full">
-                    <svg
-                        className="w-full h-[3px]"
-                        viewBox="0 0 612 3"
-                        preserveAspectRatio="none"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <line x1="0" y1="1.5" x2="612" y2="1.5" stroke="white" />
-                        <line x1="0" y1="0.5" x2="612" y2="0.5" stroke="#D6D6D6" strokeDasharray="5 5" />
-                    </svg>
-                </div>
+                {/*<div className="hidden md:block absolute bottom-0 left-0 w-full">*/}
+                {/*    <svg*/}
+                {/*        className="w-full h-[3px]"*/}
+                {/*        viewBox="0 0 612 3"*/}
+                {/*        preserveAspectRatio="none"*/}
+                {/*        fill="none"*/}
+                {/*        xmlns="http://www.w3.org/2000/svg"*/}
+                {/*    >*/}
+                {/*        <line x1="0" y1="1.5" x2="612" y2="1.5" stroke="white" />*/}
+                {/*        <line x1="0" y1="0.5" x2="612" y2="0.5" stroke="#D6D6D6" strokeDasharray="5 5" />*/}
+                {/*    </svg>*/}
+                {/*</div>*/}
 
                 <div className={`font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>
                     Start Scaling Faster
@@ -758,7 +761,7 @@ export default function Home() {
             </div>
 
             {/* Bar */}
-            <div className="my-4 relative w-full h-[41px]">
+            <div className="relative w-full h-[41px]">
                 <svg
                     className="absolute top-0 left-0 w-full h-[2px]"
                     viewBox="0 0 1439 2"
@@ -809,8 +812,8 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Comparison */}
-            <div className={`py-[60] md:py-[80px] relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center md:items-start gap-y-[20px] mx-auto`}>
+            {/* Start Scaling Faster 02 */}
+            <div className={`py-[60] px-0 lg:px-[85px] md:py-[80px] relative w-[450px] md:w-[800px] lg:w-[1120px] xl:w-[1240px] flex flex-col items-center md:items-start gap-y-[20px] mx-auto`}>
 
                 <div className={`font-sans font-medium text-[16px] text-[#2476FF] leading-[1.2] tracking-[-0.02em]`}>
                     Start Scaling Faster
@@ -826,6 +829,56 @@ export default function Home() {
                         <PrimaryButton text={"Talk to Founders"}/>
                     </div>
                 </div>
+            </div>
+
+            <div className={`mb-30
+    px-0
+    relative
+    w-[450px]
+    md:w-[800px]
+    lg:w-[1120px]
+    xl:w-[1240px]
+    mx-auto
+
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    gap-[40px]`}>
+                {
+                    table.map((e, i) => (
+                        <div key={i} className={`w-full flex flex-col gap-y-[30px]`}>
+                            <div className={`w-full flex items-center gap-x-4`}>
+                                <div className={`h-[60px] w-[60px] bg-white/70 border border-white p-1 rounded-2xl overflow-hidden`}>
+                                    <div className={`h-full w-full bg-white rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.12),_0_0_0_1px_rgba(0,0,0,0.08)]`}>
+                                    </div>
+                                </div>
+                                <div className={`text-[22px] font-semibold font-inter`}>{e.one}</div>
+                            </div>
+                            <div className={`flex-1 w-full rounded-2xl bg-[#52555B]/10`}>
+                                <div className={`p-2`}>
+                                    <div className={`p-3 flex flex-col gap-y-[20px]`}>
+                                        <div className={`flex items-center gap-x-3`}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000" viewBox="0 0 256 256"><path d="M244.24,60a8,8,0,0,0-7.75-.4c-42.93,21-73.59,11.16-106,.78-34-10.89-69.25-22.14-117.95,1.64A8,8,0,0,0,8,69.24V189.17a8,8,0,0,0,11.51,7.19c42.93-21,73.59-11.16,106.05-.78,19.24,6.15,38.84,12.42,61,12.42,17.09,0,35.73-3.72,56.91-14.06a8,8,0,0,0,4.49-7.18V66.83A8,8,0,0,0,244.24,60ZM232,181.67c-40.6,18.17-70.25,8.69-101.56-1.32-19.24-6.15-38.84-12.42-61-12.42a122,122,0,0,0-45.4,9V74.33c40.6-18.17,70.25-8.69,101.56,1.32S189.14,96,232,79.09ZM128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144ZM56,96v48a8,8,0,0,1-16,0V96a8,8,0,1,1,16,0Zm144,64V112a8,8,0,1,1,16,0v48a8,8,0,1,1-16,0Z"></path></svg>
+                                            <div className={`text-[20px] font-semibold font-inter`}>{e.two}</div>
+                                        </div>
+                                        <div className={`text-[#52555B] font-sans font-medium text-[18px]`}>{e.three}</div>
+
+                                    </div>
+                                    <div className={`p-5 bg-white rounded-xl flex flex-col gap-y-[20px]`}>
+                                        <div className={`w-full flex items-center gap-x-4`}>
+                                            <div className={`h-[50px] w-[50px] bg-gradient-to-b from-blue-500 to-blue-700 rounded-xl overflow-hidden`}>
+
+                                            </div>
+                                            <div className={`text-[20px] font-semibold font-inter`}>{e.four}</div>
+                                        </div>
+                                        <div className={`text-[#52555B] font-sans font-medium text-[18px]`}>{e.five}</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
 
             {/* Let's get started */}
